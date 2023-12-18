@@ -14,6 +14,7 @@ systemctl enable unattended-upgrades
 
 # Configure Firewall and Fail2ban
 ## Setting nftables
+mkdir -p /etc/nftables
 cat << EOF > /etc/nftables/fail2ban.conf
 #!/usr/sbin/nft -f
 
